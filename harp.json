@@ -1,0 +1,17 @@
+{
+    "globals": {
+        "title": "Prototype title",
+        "description": "A Harp Prototype.",
+        "name": "your name",
+        "email": "yourmail.@domain.com",
+        "uri": "site.com",
+
+        "config": {
+            "assets": {
+                "folder_css"    : "assets/stylesheets",
+                "folder_js"     : "assets/javascripts",
+                "folder_vendor" : "assets/vendor"
+            }
+        }
+    }
+}
