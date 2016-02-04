@@ -162,13 +162,31 @@ line2dots = function(dot1, dot2) {
 	return [m, (-m*dot1[0]+dot1[1])];
 },
 
-dotsInLine = function(line,dot) {
+dotInLine = function(line,dot) {
 	var lx = line[0],
 		ly = line[1],
 		dx = dot[0],
 		dy = dot[1];
 
 	if (dy == (lx*dx - ly))
+		return true;
+
+	return false;
+},
+
+dotOnCircle = function(circle,dot) {
+	var a = circle[0],
+		b = circle[1],
+		c = circle[2],
+		d = circle[3],
+		e = circle[4],
+		x = dot[0],
+		y = dot[1]
+		x2 = Math.pow(x, 2),
+		y2 = Math.pow(y, 2),
+		res = (a*x2)+(b*y2)+(c*x)+(d*y)+e;
+
+	if (res == 0)
 		return true;
 
 	return false;
