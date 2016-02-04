@@ -130,5 +130,29 @@ pointInCircle = function (point, radius, center)
     	return true;
     else
     	return false;
-}
+},
+
+pointInRect = function (rect, dot)
+{
+    var x1 = rect[0][0],
+    	x2 = rect[1][0],
+    	x3 = rect[2][0],
+    	x4 = rect[3][0],
+    	y1 = rect[0][1],
+    	y2 = rect[1][1],
+    	y3 = rect[2][1],
+    	y4 = rect[3][1],
+    	dotx = dot[0],
+    	doty = dot[1],
+    	minx = Math.min(x1,x2,x3,x4),
+    	miny = Math.min(y1,y2,y3,y4),
+    	maxx = Math.max(x1,x2,x3,x4),
+    	maxy = Math.max(y1,y2,y3,y4);
+
+    if(dotx <= maxx && dotx >= minx)
+    	if(doty <= maxy && doty >= miny)
+    		return true;
+
+    return false;
+};
 
