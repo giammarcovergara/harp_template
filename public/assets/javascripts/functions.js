@@ -154,5 +154,11 @@ pointInRect = function (rect, dot)
     		return true;
 
     return false;
+},
+
+rect2dots = function(dot1, dot2) {
+	var m = (dot2[1]-dot1[1])/(dot2[0]-dot1[0]);
+
+	return [m, (-m*dot1[0]+dot1[1])];
 };
 
