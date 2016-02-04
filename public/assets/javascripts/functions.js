@@ -156,9 +156,21 @@ pointInRect = function (rect, dot)
     return false;
 },
 
-rect2dots = function(dot1, dot2) {
+line2dots = function(dot1, dot2) {
 	var m = (dot2[1]-dot1[1])/(dot2[0]-dot1[0]);
 
 	return [m, (-m*dot1[0]+dot1[1])];
+},
+
+dotsInLine = function(line,dot) {
+	var lx = line[0],
+		ly = line[1],
+		dx = dot[0],
+		dy = dot[1];
+
+	if (dy == (lx*dx - ly))
+		return true;
+
+	return false;
 };
 
