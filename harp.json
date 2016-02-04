@@ -1,16 +1,27 @@
 {
     "globals": {
-        "title": "Prototype title",
+        "title": "Frontmend team battle code",
         "description": "A Harp Prototype.",
-        "name": "your name",
-        "email": "yourmail.@domain.com",
-        "uri": "site.com",
-
+        "name": "Frontmend team battle code",
         "config": {
             "assets": {
                 "folder_css"    : "assets/stylesheets",
                 "folder_js"     : "assets/javascripts",
                 "folder_vendor" : "assets/vendor"
+            }
+        },
+        "exercises" : {
+            "ex1" : {
+                "name" : "name exercise 1",
+                "description" : "description field 1"
+            },
+            "ex2" : {
+                "name" : "name exercise 2",
+                "description" : "description field 2"
+            },
+            "ex3" : {
+                "name" : "name exercise 3",
+                "description" : "description field 3"
             }
         }
     }
