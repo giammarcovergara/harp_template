@@ -1,10 +1,7 @@
 <h2 style="margin-bottom: 50px;"><%= name %></h2>
-<% for(var key in exercises) {%>
+<% for(var key in homepage) {%>
 	<section id="<%= key %>" class="exercise" style="margin-bottom: 50px;">
-		<h2><%- exercises[key].name %></h2>
-		<p><%- exercises[key].description %></p>
-		<input name="ex3-input" class="ex3-input" type="text"/>
-		<input name="ex3-submit" class="ex3-submit" type="submit"/>
-		<div class="result"></div>
+		<h2><%- homepage[key].name %></h2>
+		<p><%- homepage[key].description %></p>
 	</section>
 <% } %>

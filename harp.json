@@ -1,8 +1,8 @@
 {
     "globals": {
-        "title": "Frontmend team battle code",
-        "description": "A Harp Prototype.",
-        "name": "Frontmend team battle code",
+        "title": "Titolo pagina",
+        "description": "Descrizione pagina",
+        "name": "Nome pagina",
         "config": {
             "assets": {
                 "folder_css"    : "assets/stylesheets",
@@ -10,18 +10,18 @@
                 "folder_vendor" : "assets/vendor"
             }
         },
-        "exercises" : {
-            "ex1" : {
-                "name" : "name exercise 1",
-                "description" : "description field 1"
+        "homepage" : {
+            "section1" : {
+                "name" : "sezione 1",
+                "description" : "descrizione sezione 1"
             },
-            "ex2" : {
-                "name" : "name exercise 2",
-                "description" : "description field 2"
+            "section2" : {
+                "name" : "sezione 2",
+                "description" : "descrizione sezione 2"
             },
-            "ex3" : {
-                "name" : "name exercise 3",
-                "description" : "description field 3"
+            "section3" : {
+                "name" : "sezione 3",
+                "description" : "descrizione sezione 3"
             }
         }
     }

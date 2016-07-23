@@ -1,0 +1,21 @@
+/*
+  1. Colors
+  2. Images
+  3. MediaQueries
+*/
+
+// 1.Colors
+$main-color:  #df7ab3;
+$text-color:  #1b844b;
+$white:       #ffffff;
+$black:       #000000;
+
+// 2. Images
+
+// 3. MediaQueries
+$small-screen:     480px;
+$medium-screen:    768px;
+$large-screen:     960px;
+$small-screen-up:  $small-screen+1;
+$medium-screen-up: $medium-screen+1;
+$large-screen-up:  $large-screen+1;

@@ -1,0 +1,14 @@
+
+@mixin opacity($val: 0) {
+  $val_perc: $val*100;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity="' + $val_perc + '")';
+  filter: alpha(opacity=$val_perc);
+  opacity: $val;
+}
+
+@mixin transition($prop: all, $dur: 350ms, $timing: ease-in-out, $delay: 0ms) {
+    -webkit-transition:     $prop $dur $timing $delay;
+    -moz-transition:        $prop $dur $timing $delay;
+    -o-transition:          $prop $dur $timing $delay;
+    transition:             $prop $dur $timing $delay;
+}
